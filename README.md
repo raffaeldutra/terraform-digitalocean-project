@@ -16,7 +16,7 @@ To create a simple project.
 
 ```hcl
 module "project" {
-  source = "git@github.com:raffaeldutra/terraform-digitalocean-project.git"
+  source  = "raffaeldutra/project/digitalocean"
 
   name        = "My Great Project"
   description = "Project description"
@@ -24,13 +24,13 @@ module "project" {
 }
 ```
 
-If you want associate Droplets to this project, first you must use the [Module for Droplets here](git@github.com:raffaeldutra/terraform-digitalocean-droplet.git) or, create the resources for Droplets.
+If you want associate Droplets to this project, first you must use the [Module for Droplets here](https://github.com/raffaeldutra/terraform-digitalocean-droplet) or, create the resources for Droplets.
 
 The following code should be as below for Droplets creation:
 
 ```hcl
 module "droplet" {
-  source = "git@github.com:raffaeldutra/terraform-digitalocean-droplet.git"
+  source  = "raffaeldutra/droplet/digitalocean"
 
   name = "web-dev"
   tags = [
@@ -45,7 +45,7 @@ Once all Droplets are created, then you can associate that Droplet(s) to a proje
 
 ```hcl
 module "project" {
-  source = "git@github.com:raffaeldutra/terraform-digitalocean-project.git"
+  source  = "raffaeldutra/project/digitalocean"
 
   name        = "My Great Project"
   description = "Project description"
