@@ -24,13 +24,13 @@ module "project" {
 }
 ```
 
-If you want associate Droplets to this project, first you must use the [Module for Droplets here](git@github.com:raffaeldutra/tf-do-droplet.git) or, create the resources for Droplets.
+If you want associate Droplets to this project, first you must use the [Module for Droplets here](git@github.com:raffaeldutra/terraform-digitalocean-droplet.git) or, create the resources for Droplets.
 
 The following code should be as below for Droplets creation:
 
 ```hcl
 module "droplet" {
-  source = "git@github.com:raffaeldutra/tf-do-droplet.git"
+  source = "git@github.com:raffaeldutra/terraform-digitalocean-droplet.git"
 
   name = "web-dev"
   tags = [
@@ -45,7 +45,7 @@ Once all Droplets are created, then you can associate that Droplet(s) to a proje
 
 ```hcl
 module "project" {
-  source = "git@github.com:raffaeldutra/tf-do-project.git"
+  source = "git@github.com:raffaeldutra/terraform-digitalocean-project.git"
 
   name        = "My Great Project"
   description = "Project description"
