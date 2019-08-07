@@ -1,11 +1,7 @@
-module "droplet" {
-  source = "git::https://github.com/raffaeldutra/tf-do-droplet?ref=dev"
-}
-
-resource "digitalocean_project" "project" {
-  name        = "${var.name}-${terraform.workspace}"
+resource "digitalocean_project" "this" {
+  name        = var.name
   description = var.description
   purpose     = var.purpose
-  environment = terraform.workspace
-  resources   = [module.droplet.urn]
+  environment = var.environment[terraform.workspace]
+  resources   = var.droplets
 }
