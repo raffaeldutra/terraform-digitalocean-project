@@ -17,6 +17,7 @@ To create a simple project.
 ```hcl
 module "project" {
   source  = "raffaeldutra/project/digitalocean"
+  version = "1.0.1"
 
   name        = "My Great Project"
   description = "Project description"
@@ -31,6 +32,7 @@ The following code should be as below for Droplets creation:
 ```hcl
 module "droplet" {
   source  = "raffaeldutra/droplet/digitalocean"
+  version = "1.0.2"
 
   name = "web-dev"
   tags = [
@@ -46,6 +48,7 @@ Once all Droplets are created, then you can associate that Droplet(s) to a proje
 ```hcl
 module "project" {
   source  = "raffaeldutra/project/digitalocean"
+  version = "1.0.1"
 
   name        = "My Great Project"
   description = "Project description"

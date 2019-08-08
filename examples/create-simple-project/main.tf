@@ -1,5 +1,6 @@
 module "project" {
-  source = "git@github.com:raffaeldutra/tf-do-project.git"
+  source  = "raffaeldutra/project/digitalocean"
+  version = "1.0.1"
 
   name        = "My Great Project"
   description = "Project description"
