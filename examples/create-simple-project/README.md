@@ -2,7 +2,7 @@
 
 ```hcl
 module "project" {
-  source = "git@github.com:raffaeldutra/tf-do-project.git"
+  source = "git@github.com:raffaeldutra/terraform-digitalocean-project.git"
 
   name        = "My Great Project"
   description = "Project description"
