@@ -2,7 +2,7 @@
 
 This module creates projects at Digital Ocean for better organization using Droplets.
 
-This module use the following resource below:
+This module uses the following resources below:
 
 * [Digital Ocean Project](https://www.terraform.io/docs/providers/do/r/project.html)
 
@@ -25,7 +25,7 @@ module "project" {
 }
 ```
 
-If you want associate Droplets to this project, first you must use the [Module for Droplets here](https://github.com/raffaeldutra/terraform-digitalocean-droplet) or, create the resources for Droplets.
+If you want to associate Droplets in a project, you must use the the [Module for Droplets here](https://github.com/raffaeldutra/terraform-digitalocean-droplet) or, create the resources for Droplets.
 
 The following code should be as below for Droplets creation:
 
