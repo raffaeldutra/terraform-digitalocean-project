@@ -14,7 +14,7 @@ variable "environment" {
   description = "(optional) Edit values below for every environment name that you want"
   default = {
     "dev" = "Development"
-    "hom" = "Homologation"
+    "hom" = "Staging"
     "prd" = "Production"
   }
 }
