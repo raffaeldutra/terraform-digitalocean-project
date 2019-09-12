@@ -2,8 +2,6 @@
 
 ![!](https://img.shields.io/github/repo-size/raffaeldutra/terraform-digitalocean-project)  ![!](https://img.shields.io/github/languages/top/raffaeldutra/terraform-digitalocean-project)  ![!](https://img.shields.io/github/v/tag/raffaeldutra/terraform-digitalocean-project)
 
-![!](https://img.shields.io/github/status/pulls/raffaeldutra/presentation-terraform-introduction.svg)
-
 This module creates projects at Digital Ocean for better organization using Droplets.
 
 This module uses the following resources below:
